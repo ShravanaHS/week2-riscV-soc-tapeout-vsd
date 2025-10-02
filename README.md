@@ -23,8 +23,8 @@ This week was dedicated to designing RTL modules, simulating and synthesizing th
 
 | Tasks | Task Overview | Details & Documents |
 |-----|---------------|------------------|
-| 1   | Conceptual Understanding or Fundamentals of SoC Design | [TASK 1](https://github.com/ShravanaHS/week1-riscV-soc-tapeout-vsd/blob/main/DAY1/day1.md) |
-| 2   | Hands on Functional Modelling of BabySoC and its Fundamentals | [TASK 2](https://github.com/ShravanaHS/week1-riscV-soc-tapeout-vsd/blob/main/DAY2/day2.md) |
+| 1   | Conceptual Understanding or Fundamentals of SoC Design | [TASK 1](https://github.com/ShravanaHS/week2-riscV-soc-tapeout-vsd/blob/main/task1.md) |
+| 2   | Hands on Functional Modelling of BabySoC and its Fundamentals | [TASK 2](https://github.com/ShravanaHS/week2-riscV-soc-tapeout-vsd/blob/main/task2.md) |
 
 
 ---
