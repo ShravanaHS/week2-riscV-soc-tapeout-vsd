@@ -1,4 +1,4 @@
-# VSD RISC-V SoC Tapeout Program – Week 1
+# VSD RISC-V SoC Tapeout Program – Week 2
 [![VSD](https://img.shields.io/badge/VSD-RISC--V%20SoC-blue?style=for-the-badge)](https://www.vlsisystemdesign.com/)
 [![Linux](https://img.shields.io/badge/OS-Linux%20%7C%20Ubuntu-orange?style=for-the-badge&logo=linux)](www.linux.org)
 [![Git](https://img.shields.io/badge/Version%20Control-Git-black?style=for-the-badge&logo=git)](https://github.com/)
