@@ -8,16 +8,16 @@ To build a solid understanding of **SoC fundamentals** and practice **functional
 
 # Table of Contents
 
-1. [Introduction — What is an SoC?](#1-introduction-—-what-is-an-soc)
-2. [SoC vs Microcontroller — In-depth Comparison](#2-soc-vs-microcontroller-—-in-depth-comparison)
+1. [Introduction What is an SoC?](#1-introduction-what-is-an-soc)
+2. [SoC vs Microcontroller In-depth Comparison](#2-soc-vs-microcontroller-in-depth-comparison)
 3. [SoC Block-by-Block](#3-soc-block-by-block)
-4. [System on Chip (SoC) — Real-world Applications & Overview](#4-system-on-chip-soc-—-real-world-applications--overview)
+4. [System on Chip (SoC) Real-world Applications & Overview](#4-system-on-chip-soc-real-world-applications--overview)
 5. [References & Further Reading](#5-references--further-reading)
 
 
 ---
 
-# 1. Introduction — What is an SoC?
+# 1. Introduction What is an SoC?
 A **System on Chip (SoC)** is a complete electronic system packaged into a single integrated circuit (chip). Instead of using separate chips for CPU, memory, peripherals, and analog/electrical interfaces, an SoC combines many of those blocks on one piece of silicon.
 
 **Key idea:** an SoC packs many functions close together on a chip so they can operate with low power, low latency, and small size. The result is what powers modern smartphones, tablets, wearables, smart appliances, IoT nodes, cars, and much more.
@@ -30,7 +30,7 @@ A **System on Chip (SoC)** is a complete electronic system packaged into a singl
 
 ---
 
-# 2. SoC vs Microcontroller — In-depth Comparison
+# 2. SoC vs Microcontroller In-depth Comparison
 
 **Microcontroller (MCU)** and **SoC** are sometimes mixed up. They overlap, but there are important differences.
 
@@ -471,7 +471,7 @@ Includes **ADC, DAC, amplifiers, filters, mixers**.
 
 
 
-# 4.System on Chip (SoC) — Real-world Applications & Overview
+# 4.System on Chip (SoC) Real-world Applications & Overview
 
 ---
 ## 1. Where SoCs Are Found — Real-world Examples & Use Cases
