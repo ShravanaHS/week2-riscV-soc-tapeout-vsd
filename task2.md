@@ -215,13 +215,36 @@ Inside GTKWave, you need to add the relevant signals to the viewer and set the c
 3.  Click the **"Append"** button to add them to the main wave panel.
 4.  To properly visualize the DAC's output, **right-click** the `OUT` signal, and change its **Data Format** to **`Analog > Step`**.
 
-![Final Simulation Waveform](link/to/your/image.png)
+![Final Simulation Waveform](https://github.com/ShravanaHS/week2-riscV-soc-tapeout-vsd/blob/main/images/dac.png)
+
+![Final Simulation Waveform](https://github.com/ShravanaHS/week2-riscV-soc-tapeout-vsd/blob/main/images/dacx.png)
+
+![Final Simulation Waveform](https://github.com/ShravanaHS/week2-riscV-soc-tapeout-vsd/blob/main/images/pll.png)
+
+![Final Simulation Waveform](https://github.com/ShravanaHS/week2-riscV-soc-tapeout-vsd/blob/main/images/full.png)
+
 
 The final waveform clearly shows the successful operation of the SoC:
 
 * **Initialization**: The `reset` signal starts high and then goes low, allowing the RVMYTH CPU to begin executing its program.
 * **Digital Control**: The `RV_TO_DAC[9:0]` signal shows the digital value of the CPU's `r17` register. You can see it first ramp up and then begin to oscillate as the program runs through its two main loops.
 * **Analog Output**: The `OUT` signal, representing the DAC's voltage, perfectly mirrors the digital `RV_TO_DAC` values. It creates a stepped ramp followed by an oscillation, visually confirming that the digital CPU is in complete control of the analog output.ts and Analysis
+
+---
+
+## 🎓 My Learnings & Takeaways
+
+This project was a fantastic hands-on journey through the entire simulation flow of a mixed-signal SoC. Beyond just the theory, I gained practical experience and learned several key lessons, especially by working through challenges.
+
+* **The "Big Picture" Came to Life**: My biggest takeaway was seeing a full SoC work from end to end. It wasn't just abstract blocks anymore; I saw the `reset` signal kick off the CPU, watched the `RV_TO_DAC` digital values change as the program ran, and saw the final `OUT` analog signal mirror it exactly. It made the concept of digital logic controlling an analog output feel real.
+
+* **The Toolchain is Critical (and Tricky!)**: I learned that the simulation process is a multi-step workflow (Convert → Compile → Simulate → Analyze). I ran into my first challenge during the TL-Verilog conversion.
+    * **Lesson 1: The Importance of a Virtual Environment**: My initial attempt to install the SandPiper tool globally failed because I hadn't created a **Python virtual environment** first. This taught me a valuable lesson in dependency management. Using `venv` created a clean, isolated "sandbox" for the tools, which immediately solved the installation errors and prevented any conflicts with my system's global packages.
+
+* **Debugging is Part of the Process**: Even after the design compiled, I faced another common issue.
+    * **Lesson 2: Pay Attention to Output Paths**: When I first tried to view the waveform, GTKWave gave a "file not found" error. I learned that the simulation tool (`vvp`) created the output file (`pre_synth_sim.vcd`) in my main project directory, not in the `output/` sub-folder I expected. This taught me to always verify where my tools are placing output files, which is a crucial debugging skill.
+
+Overall, this project was an excellent practical exercise. It bridged the gap between theory and application, and working through the setup and simulation issues was just as valuable as analyzing the final, successful waveform.
 
 
 
