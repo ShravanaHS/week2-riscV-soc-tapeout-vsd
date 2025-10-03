@@ -5,54 +5,48 @@
 [![RISC-V](https://img.shields.io/badge/Architecture-RISC--V-blue?style=for-the-badge&logo=riscv)](https://riscv.org/)
 
 ---
+## 🎯 Week 2 Objective: BabySoC Fundamentals & Functional Modelling
 
-## 🔰 Introduction
-This repository documents my **Week 2 learning journey** and submissions for the **VSD RISC-V SoC Tapeout Program**.  
+This repository documents my progress and submissions for **Week 2** of the VSD RISC-V SoC Tapeout Program.
 
-This week focuses on **BabySoC Fundamentals & Functional Modelling** for RISC-V SoC components.  
-
-💡 The aim is to **learn → implement → verify → document → share**.  
+The primary focus this week was on the foundational principles of SoC design, moving from concept to a functional hardware model. This involved designing core RTL modules in Verilog, performing functional verification through simulation, and understanding the process of logic synthesis and optimization.
 
 ---
+## 📝 Weekly Submissions
 
-# Week 2 – BabySoC Fundamentals & Functional Modelling
+My work for this week is divided into two main tasks, covering the theoretical and practical aspects of functional modelling for the BabySoC.
 
-This week was dedicated to designing RTL modules, simulating and synthesizing them, and learning optimization techniques.
-
-### 🗓️ Daily Breakdown
-
-| Tasks | Task Overview | Details & Documents |
-|-----|---------------|------------------|
-| 1   | Conceptual Understanding or Fundamentals of SoC Design | [TASK 1](https://github.com/ShravanaHS/week2-riscV-soc-tapeout-vsd/blob/main/task1.md) |
-| 2   | Hands on Functional Modelling of BabySoC and its Fundamentals | [TASK 2](https://github.com/ShravanaHS/week2-riscV-soc-tapeout-vsd/blob/main/task2.md) |
-
+| Task | Focus Area | View Submission |
+|:----:|--------------------------------------------------|:----------------:|
+| 1    | **SoC Design Fundamentals** | [**Task 1 Report**](https://github.com/ShravanaHS/week2-riscV-soc-tapeout-vsd/blob/main/task1.md) |
+| 2    | **Hands-on Functional Modelling of BabySoC** | [**Task 2 Report**](https://github.com/ShravanaHS/week2-riscV-soc-tapeout-vsd/blob/main/task2.md) |
 
 ---
+## 🛠️ Tools & Technologies Used
 
-### ✅ Key Learnings from Week 2
-- Designed basic **RTL modules** in Verilog.
-- Performed **simulation using Icarus Verilog & GTKWave**.
-- Synthesized RTL designs using **Yosys**.
-- Understood **blocking vs non-blocking assignments** and their impact on simulation correctness.
-- Learned **combinational and sequential optimization techniques** to reduce area and improve timing.
-- Gained experience in **Gate-Level Simulation (GLS)** and identifying synthesis-simulation mismatches.
+This week's tasks provided hands-on experience with the following open-source VLSI tools:
+* **BabySoc** : [VSDBabySoC is a compact educational SoC](https://github.com/manili/VSDBabySoC)
+* **Icarus Verilog**: The primary simulator used for compiling and running functional verification on the RTL designs.
+* **GTKWave**: A graphical waveform viewer used to visualize and debug simulation outputs.
 
 ---
+## ✅ Key Learnings & Competencies Gained
 
-### 📌 References
-- [RISC-V International](https://riscv.org)
-- [Linux Command Handbook](https://linuxcommand.org/)
-- [Yosys Open-Source Synthesis Tool](https://github.com/YosysHQ/yosys)
-- [Icarus Verilog Documentation](http://iverilog.icarus.com/)
-- [GTKWave Waveform Viewer](http://gtkwave.sourceforge.net/)
+
+This project provides a practical, hands-on introduction to several core concepts in modern System-on-Chip design. The key takeaways from simulating the VSDBabySoC include:
+* **Introduction to SoC** : build a solid understanding of SoC fundamentals.
+
+* **Mixed-Signal Integration**: A clear, visual understanding of how digital components (the CPU) interface with and control analog components (the DAC) within a single chip.
+
+* **RISC-V in Action**: A practical demonstration of a simple RISC-V core executing a program to perform a specific hardware task, illustrating the fundamentals of instruction set architecture.
+
+* **Complete SoC Architecture**: A tangible example of how a CPU, a clocking system (PLL), and an I/O peripheral (DAC) work together to form a complete, functional system.
+
+* **VLSI Toolchain Experience**: Hands-on use of a standard open-source simulation flow, including Verilog compilation (`iverilog`), simulation (`vvp`), and graphical waveform analysis (`GTKWave`).
 
 ---
-
 ### 🙏 Acknowledgments
 I sincerely thank:  
-- [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/) sir and **[VSD (VLSI System Design)](https://vsdiat.vlsisystemdesign.com/)** team for this initiative.  
-- Mentors & the community for their guidance and support.  
-- Open-source developers for tools like **Yosys, Icarus Verilog, and GTKWave**.
-
----
-
+- **Mr. Kunal Ghosh** and the entire **VSD (VLSI System Design)** team for this incredible learning opportunity.  
+- The program mentors and the VSD community for their continuous guidance and support.  
+- The open-source community for developing and maintaining essential tools like **Yosys, Icarus Verilog, and GTKWave**.
